@@ -1,0 +1,87 @@
+.todo-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
+.todo-input {
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #6C63FF;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  flex-grow: 1;
+}
+
+.create-button {
+  background-color: #6C63FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  opacity: .8; 
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.todo-item:not(:first-child){
+  border-top: 1px solid #6C63FF;
+}
+
+.todo-checkbox {
+  accent-color: #6C63FF; 
+}
+
+.completed{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-button,
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.edit-button:hover svg path {
+  stroke: #0F0; 
+}
+
+.delete-button:hover svg path {
+  stroke: #F00; 
+}
